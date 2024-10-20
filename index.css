@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+h1,
+h4,
+p,
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: yellow;
+    /* Button color */
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* Slightly rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+    margin: 0 10px;
+    /* Add gap between buttons horizontally */
+}
+
+.btn:hover {
+    background-color: #ff8a50;
+    /* Lighter color on hover */
+    color: #000;
+    /* Text turns black on hover */
+}
+
+.btn-light {
+    background: white;
+    /* Semi-transparent white background */
+    color: black;
+    /* White text color */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Light border with transparency */
+    padding: 0.75rem 1.5rem;
+    /* Padding for button size */
+    font-size: 1rem;
+    /* Font size */
+    font-weight: 500;
+    /* Font weight */
+    border-radius: 0.5rem;
+    /* Rounded corners */
+    text-align: center;
+    /* Center text alignment */
+    backdrop-filter: blur(5px);
+    /* Blurs the background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+    transition: background 0.3s ease, color 0.3s ease;
+    /* Smooth transitions */
+    cursor: pointer;
+    /* Changes cursor to pointer */
+    margin: 0 10px;
+    /* Add gap between buttons horizontally */
+}
+
+.btn-light:hover {
+    background: rgba(255, 255, 255, 0.3);
+    /* Slightly darker background on hover */
+    color: #f0f0f0;
+    /* Slightly lighter text on hover */
+}
+
+.btn-light:focus {
+    outline: none;
+    /* Removes outline on focus */
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+    /* Adds a focus shadow */
+}

@@ -1,0 +1,76 @@
+/* Full-screen mask container */
+
+.mask {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* Added to handle absolute positioning of the content */
+    overflow: hidden;
+}
+
+.into-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures image covers the container properly */
+    background-size: cover;
+    background-position: center;
+}
+
+.mask::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent black overlay */
+    z-index: 1;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    /* Full-screen height */
+    position: relative;
+    /* So the content can be positioned absolutely */
+}
+
+
+/* Center the content perfectly in the middle of the hero section */
+
+.hero .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center horizontally and vertically */
+    z-index: 2;
+    /* On top of the overlay */
+    text-align: center;
+    color: white;
+    /* Text color */
+}
+
+
+/* Styling for h1 */
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+
+/* Styling for paragraph text */
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #cccccca6;
+    /* Lighter text color for contrast */
+}
+
+
+/* Styling for button */

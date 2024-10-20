@@ -1,0 +1,127 @@
+.contact-section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.144);
+}
+
+.about-content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: white;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: white;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.055);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.auth-buttons .sign-in,
+.auth-buttons .sign-up {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.auth-buttons .sign-in {
+    background-color: #28a745;
+    color: white;
+}
+
+.auth-buttons .sign-in:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.auth-buttons .sign-up {
+    background-color: #ffc107;
+    color: white;
+}
+
+.auth-buttons .sign-up:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+
+/* Media Queries for responsive design */
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px;
+    }
+    .about-content h2 {
+        font-size: 28px;
+    }
+    .about-content p {
+        font-size: 16px;
+    }
+    .contact-form h3 {
+        font-size: 20px;
+    }
+    .auth-buttons {
+        flex-direction: column;
+    }
+    .auth-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,117 @@
+/* General Styles for Footer */
+
+.footer {
+    background-color: rgba(128, 128, 128, 0.068);
+    /* Dark background color */
+    color: white;
+    /* Text color */
+    padding: 20px;
+    /* Padding around the footer */
+    display: flex;
+    /* Flex layout */
+    justify-content: center;
+    /* Center the content */
+}
+
+
+/* Container for Footer Content */
+
+.footer-container {
+    width: 100%;
+    /* Full width */
+    max-width: 1200px;
+    /* Maximum width for large screens */
+    display: flex;
+    /* Flex layout */
+    flex-wrap: wrap;
+    /* Wrap items on smaller screens */
+    justify-content: space-between;
+    /* Space between left and right sections */
+    align-items: center;
+    /* Align items vertically center */
+}
+
+
+/* Left Section Styles */
+
+.left,
+.right {
+    flex: 1;
+    /* Allow sections to grow equally */
+    min-width: 250px;
+    /* Minimum width for smaller screens */
+    padding: 10px;
+    /* Padding for inner content */
+}
+
+
+/* Styles for Social Icons Section */
+
+.social-icons {
+    display: flex;
+    /* Flex for social icons */
+    justify-content: flex-start;
+    /* Align icons to the left */
+    margin-top: 10px;
+    /* Margin for spacing */
+}
+
+
+/* Icon Styles */
+
+.icon {
+    font-size: 24px;
+    /* Icon size */
+    color: white;
+    /* Default icon color */
+    margin: 0 15px;
+    /* Space between icons */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+
+/* Hover Effect for Icons */
+
+.icon:hover {
+    color: #1DA1F2;
+    /* Change color on hover (Twitter Blue) */
+    transform: scale(1.2);
+    /* Slightly increase size on hover */
+}
+
+
+/* Responsive Text Styles */
+
+.right h4 {
+    font-size: 1.5rem;
+    /* Heading size */
+    margin-bottom: 10px;
+    /* Space below heading */
+}
+
+.right p {
+    font-size: 0.9rem;
+    /* Font size for paragraph */
+    line-height: 1.5;
+    /* Line height for readability */
+}
+
+
+/* Media Query for Mobile Devices */
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        /* Stack sections vertically */
+        align-items: center;
+        /* Center items */
+    }
+    .left,
+    .right {
+        text-align: center;
+        /* Center text for smaller screens */
+        padding: 20px 0;
+        /* Add padding for top and bottom */
+    }
+}
